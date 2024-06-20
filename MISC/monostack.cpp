@@ -1,3 +1,5 @@
+//TESTED
+
 void compute(const vi& a, vi& L,vi& R) {
     //NEREYE KADAR EN BÜYÜK (EŞİTLERİ SOLA KADAR ALIYOR)
     int n = a.size()-1;

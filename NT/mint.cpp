@@ -1,3 +1,5 @@
+//TESTED
+
 int add(int x,int y) {
     return ((x+y) >= MOD ? x+y-MOD : x+y);
 }

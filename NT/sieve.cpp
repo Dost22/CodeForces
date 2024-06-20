@@ -1,10 +1,13 @@
+//TESTED
+
 int si[LIM]; // MAKE SURE LIM IS DEFINED! [0..LIM)
 
 void init_sieve() {
     for (int i=2;i<LIM;i++) {
-        sieve[i] = i;
+        if (si[i]) continue;
+        si[i] = i;
         for (int j=i*i;j<LIM;j+=i) {
-            sieve[j] = i;
+            si[j] = i;
         }
     } 
 } 
