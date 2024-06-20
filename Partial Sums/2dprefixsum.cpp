@@ -15,7 +15,8 @@ struct PSUM {
     }
     int get(int x1,int y1,int x2,int y2) {
         assert(x2 >= x1 && y2 >= y1);
+        assert(x2 <= n && y2 <= m);
         return p[x2][y2]-p[x2][y1-1]-p[x1-1][y2]+p[x1-1][y1-1];
     }
-    
+
 };
