@@ -6,7 +6,7 @@ T f(T a,T b) {
 }
 template <typename T>
 struct fdeque {
-
+    //f(a,b) = f(b,a) olmalı! (MIN AND OR XOR SUM PROD ... )
     struct fstack {
         stack<pii> st;
         int get() {
